@@ -1,6 +1,6 @@
 {% set name = "Orange3-SingleCell" %}
-{% set version = "0.8.1" %}
-{% set sha256 = "9eed302365948722b87502aca34fb19a037e6fd9a356f9d2dddb666e6dcd7c6c" %}
+{% set version = "0.8.2" %}
+{% set sha256 = "69fbf9152d027d0f9517adc3d7138b9c44ea1592e5ddc7607ec8bcdddab4fa46" %}
 
 package:
   name: {{ name|lower }}
@@ -34,7 +34,6 @@ requirements:
     - orange3-bioinformatics
     - pandas
     - fastdtw
-    - astropy
     - loompy
     - networkx
 
