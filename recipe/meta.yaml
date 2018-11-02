@@ -1,6 +1,6 @@
 {% set name = "Orange3-SingleCell" %}
-{% set version = "0.8.2" %}
-{% set sha256 = "69fbf9152d027d0f9517adc3d7138b9c44ea1592e5ddc7607ec8bcdddab4fa46" %}
+{% set version = "0.9.0" %}
+{% set sha256 = "4cfac6612e167099a285dd6a13e39e44bcbc41093c49828b9d2a6c400721a62a" %}
 
 package:
   name: {{ name|lower }}
@@ -58,3 +58,6 @@ about:
 extra:
   recipe-maintainers:
     - jakakokosar
+    - astaric
+    - lanzagar
+    - ales-erjavec
