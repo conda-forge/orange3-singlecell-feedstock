@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About orange3-singlecell
 ========================
 
@@ -18,8 +14,17 @@ Summary: Single-cell Orange
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/orange3-singlecell-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/orange3-singlecell-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3151&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/orange3-singlecell-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
