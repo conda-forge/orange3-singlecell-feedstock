@@ -1,6 +1,6 @@
 {% set name = "Orange3-SingleCell" %}
-{% set version = "0.9.5" %}
-{% set sha256 = "af46f2eda0f223638b0c3f5869f4c458340d33733ff98d1cab97119f0f1107c9" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "7b948f51fd2129fd0c6ddb1e2f42afcf5a5a74628d3d49e9953dd8f2fe791d09" %}
 
 package:
   name: {{ name|lower }}
