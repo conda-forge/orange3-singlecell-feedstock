@@ -1,6 +1,6 @@
 {% set name = "Orange3-SingleCell" %}
-{% set version = "1.3.0" %}
-{% set sha256 = "e2757418999ff3569a89e6c4d2c6cdd825b3f374a069f6a5f220c3904db57342" %}
+{% set version = "1.4.0" %}
+{% set sha256 = "a6c00f14822be886b6c65d56de070243f04af6f5b8d4b54adfa68584a1fe311e" %}
 
 package:
   name: {{ name|lower }}
@@ -14,17 +14,17 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
     - vcftutorials = orangecontrib.single_cell.tutorials:main
     - html-index = orangecontrib.single_cell.widgets:WIDGET_HELP_PATH
     - Single Cell = orangecontrib.single_cell.widgets:main
 
-    
+
 requirements:
   host:
     - python >=3
-    - pip 
+    - pip
     - sphinx
     - recommonmark
     - setuptools
@@ -55,7 +55,7 @@ about:
   license: GPL-3
   license_family: GPL
   license_file: LICENSE
-  summary: 'Single-cell Orange'
+  summary: Single-cell Orange
 
 extra:
   recipe-maintainers:
