@@ -16,7 +16,6 @@ build:
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
-    - vcftutorials = orangecontrib.single_cell.tutorials:main
     - html-index = orangecontrib.single_cell.widgets:WIDGET_HELP_PATH
     - Single Cell = orangecontrib.single_cell.widgets:main
 
@@ -47,7 +46,6 @@ test:
     - orangecontrib.single_cell
     - orangecontrib.single_cell.widgets
     - orangecontrib.single_cell.preprocess
-    - orangecontrib.single_cell.tutorials
   commands:
     - python -m orangecontrib.single_cell --help
 
