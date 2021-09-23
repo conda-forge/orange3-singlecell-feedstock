@@ -1,6 +1,6 @@
 {% set name = "Orange3-SingleCell" %}
-{% set version = "1.4.0" %}
-{% set sha256 = "a6c00f14822be886b6c65d56de070243f04af6f5b8d4b54adfa68584a1fe311e" %}
+{% set version = "1.5.0" %}
+{% set sha256 = "11c65ef66caa1514838469f0c723bd3bea19643a86049b59dc59d5bb2eb3b396" %}
 
 package:
   name: {{ name|lower }}
@@ -16,7 +16,6 @@ build:
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
-    - vcftutorials = orangecontrib.single_cell.tutorials:main
     - html-index = orangecontrib.single_cell.widgets:WIDGET_HELP_PATH
     - Single Cell = orangecontrib.single_cell.widgets:main
 
@@ -31,24 +30,22 @@ requirements:
     - setuptools_scm
   run:
     - python >=3
-    - orange3
-    - orange3-bioinformatics
-    - pandas
-    - fastdtw
-    - loompy
-    - networkx
-    - anndata
+    - orange3 >=3.23.0
+    - orange3-bioinformatics >=4.0.0
+    - pandas >=0.23
+    - fastdtw ==0.3.2
+    - loompy >=2.0.10
+    - xlrd ~=1.2.0
+    - anndata >=0.6.21
+    - numpy
+    - scikit-learn
 
 test:
   # Python imports
   imports:
     - orangecontrib.single_cell
-    - orangecontrib.single_cell.__main__
     - orangecontrib.single_cell.widgets
     - orangecontrib.single_cell.preprocess
-    - orangecontrib.single_cell.tutorials
-  commands:
-    - python -m orangecontrib.single_cell --help
 
 about:
   home: https://singlecell.biolab.si/
