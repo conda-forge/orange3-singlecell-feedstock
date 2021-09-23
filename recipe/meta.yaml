@@ -46,8 +46,6 @@ test:
     - orangecontrib.single_cell
     - orangecontrib.single_cell.widgets
     - orangecontrib.single_cell.preprocess
-  commands:
-    - python -m orangecontrib.single_cell --help
 
 about:
   home: https://singlecell.biolab.si/
