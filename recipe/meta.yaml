@@ -31,19 +31,20 @@ requirements:
     - setuptools_scm
   run:
     - python >=3
-    - orange3
-    - orange3-bioinformatics
-    - pandas
-    - fastdtw
-    - loompy
-    - networkx
-    - anndata
+    - orange3 >=3.23.0
+    - orange3-bioinformatics >=4.0.0
+    - pandas >=0.23
+    - fastdtw ==0.3.2
+    - loompy >=2.0.10
+    - xlrd ~=1.2.0
+    - anndata >=0.6.21
+    - numpy
+    - scikit-learn
 
 test:
   # Python imports
   imports:
     - orangecontrib.single_cell
-    - orangecontrib.single_cell.__main__
     - orangecontrib.single_cell.widgets
     - orangecontrib.single_cell.preprocess
     - orangecontrib.single_cell.tutorials
