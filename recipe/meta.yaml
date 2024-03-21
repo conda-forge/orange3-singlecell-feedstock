@@ -30,12 +30,13 @@ requirements:
     - setuptools_scm
   run:
     - python >=3
-    - orange3 >=3.23.0
+    - orange3 >=3.34.0
     - orange3-bioinformatics >=4.0.0
-    - pandas >=0.23
     - fastdtw ==0.3.2
+    - pandas >=0.23
     - loompy >=2.0.10
-    - xlrd ~=1.2.0
+    - xlrd >=2.0.1
+    - openpyxl
     - anndata >=0.6.21
     - numpy
     - scikit-learn
@@ -48,7 +49,7 @@ test:
     - orangecontrib.single_cell.preprocess
 
 about:
-  home: https://singlecell.biolab.si/
+  home: https://github.com/biolab/orange3-single-cell/
   license: GPL-3
   license_family: GPL
   license_file: LICENSE
