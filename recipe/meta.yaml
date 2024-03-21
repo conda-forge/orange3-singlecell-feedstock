@@ -50,7 +50,7 @@ test:
 
 about:
   home: https://github.com/biolab/orange3-single-cell/
-  license: GPL-3
+  license: GPL-3.0-only
   license_family: GPL
   license_file: LICENSE
   summary: Single-cell Orange
