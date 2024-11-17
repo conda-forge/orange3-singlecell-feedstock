@@ -3,9 +3,9 @@ About orange3-singlecell-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/orange3-singlecell-feedstock/blob/main/LICENSE.txt)
 
-Home: https://singlecell.biolab.si/
+Home: https://github.com/biolab/orange3-single-cell/
 
-Package license: GPL-3
+Package license: GPL-3.0-only
 
 Summary: Single-cell Orange
 
