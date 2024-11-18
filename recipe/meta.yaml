@@ -1,6 +1,6 @@
 {% set name = "Orange3-SingleCell" %}
-{% set version = "1.6.0" %}
-{% set sha256 = "dccce6cb63085fff3dc524e12325e9dfb6c415661dacc57454a27e21bb31341a" %}
+{% set version = "1.7.2" %}
+{% set sha256 = "77ade57665dc5c14f41945a228640e2cbd00620abbf3ea6e52a198962e7f30db" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_').lower() }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -22,14 +22,14 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python {{ python_min }}
     - pip
     - sphinx
     - recommonmark
     - setuptools
     - setuptools_scm
   run:
-    - python >=3
+    - python >={{ python_min }}
     - orange3 >=3.34.0
     - orange3-bioinformatics >=4.0.0
     - fastdtw ==0.3.2
@@ -42,7 +42,8 @@ requirements:
     - scikit-learn
 
 test:
-  # Python imports
+  requires:
+    - python {{ python_min }}
   imports:
     - orangecontrib.single_cell
     - orangecontrib.single_cell.widgets
