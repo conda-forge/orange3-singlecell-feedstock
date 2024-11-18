@@ -42,7 +42,8 @@ requirements:
     - scikit-learn
 
 test:
-  # Python imports
+  requires:
+  python {{ python_min }}
   imports:
     - orangecontrib.single_cell
     - orangecontrib.single_cell.widgets
