@@ -1,6 +1,6 @@
 {% set name = "Orange3-SingleCell" %}
-{% set version = "1.7.3" %}
-{% set sha256 = "0847025aff1f00dd701df80758766b165b244245bbbf0a6fb186396fd4741a3c" %}
+{% set version = "1.7.4" %}
+{% set sha256 = "9f8fa2bc16b548fc05d95c8fe272ba8ff4db98ed6b622a6a1befa52796616f2a" %}
 
 package:
   name: {{ name|lower }}
@@ -32,7 +32,7 @@ requirements:
     - python >={{ python_min }}
     - orange3 >=3.34.0
     - orange3-bioinformatics >=4.0.0
-    - fastdtw ==0.3.2
+    - fastdtw
     - pandas >=0.23
     - loompy >=2.0.10
     - xlrd >=2.0.1
